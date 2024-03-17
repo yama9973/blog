@@ -10,5 +10,9 @@ const { frontmatter } = Astro.props;
     <h2>{frontmatter.title}</h2>
     <slot />
     <div class="center">
+        <a href="/posts/">
+            <button class="btn">My Posts</button>
+        </a>
     </div>
+
 </BaseLayout>

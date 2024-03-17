@@ -4,9 +4,7 @@ description: 'ブログを作成してみた'
 image:
     url: '/GitHub.webp'
     alt: 'GitHub wallpaper'
-worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
+pubDate: '2024-03-17'
 ---
 
 個人の覚書としてBlogを始めようと思います。

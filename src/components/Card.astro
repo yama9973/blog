@@ -4,9 +4,10 @@ interface Props {
     image: string;
     title: string;
     body: string;
+    pubDate: Date;
 }
 
-const { url, image, title, body } = Astro.props;
+const { url, image, title, body,pubDate } = Astro.props;
 import { Image } from 'astro:assets';
 ---
 <li class="card">
@@ -19,6 +20,9 @@ import { Image } from 'astro:assets';
         </h3>
         <p class="card__txt">
             {body}
+        </p>
+        <p class="card__txt">
+            {pubDate}
         </p>
     </a>
 </li>
