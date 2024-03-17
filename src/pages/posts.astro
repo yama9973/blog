@@ -5,8 +5,9 @@ import Card from '../components/Card.astro';
 import {Image} from "astro:assets";
 const allProjects = await getCollection("posts");
 const pageTitle = "Blogs";
+const pageDescription = "PostLists";
 ---
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
     <div class="gif">
         <Image width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
     </div>
