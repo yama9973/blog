@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import {Image} from "astro:assets";
-const allProjects = await getCollection("blogs");
+const allProjects = await getCollection("posts");
 const pageTitle = "Blogs";
 ---
 <Layout pageTitle={pageTitle}>
@@ -13,7 +13,7 @@ const pageTitle = "Blogs";
     <h2>Posts</h2>
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
-            url={`/blogs/${card.slug}/`}
+            url={`/posts/${card.slug}/`}
             image={card.data.image.url} 
             title={card.data.title} 
             body={card.data.description}
