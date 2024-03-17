@@ -8,7 +8,7 @@
     --text-link: #78c2ad;
     --underline: #375a7f;
     --header: 'Pacifico', cursive;
-    --body: 'Josefin Sans', sans-serif; 
+    --body: 'Josefin Sans', 'Noto Sans', 'Zen Kaku Gothic New', sans-serif;
 }
 
 html {
