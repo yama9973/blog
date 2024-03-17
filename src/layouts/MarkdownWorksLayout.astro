@@ -9,6 +9,7 @@ const { frontmatter } = Astro.props;
     </div>
     <h2>{frontmatter.title}</h2>
     <slot />
+    <p>更新日 {frontmatter.pubDate}<p>
     <div class="center">
         <a href="/posts/">
             <button class="btn">My Posts</button>

@@ -12,5 +12,3 @@ pubDate: '2024-03-17'
 BlogのテンプレにはMilky-Wayを利用しています。
 
 https://github.com/ttomczak3/Milky-Way
-
-更新日 {pubDate}
