@@ -8,7 +8,7 @@
     --text-link: #78c2ad;
     --underline: #375a7f;
     --header: 'Pacifico', cursive;
-    --body: 'Josefin Sans', 'Noto Sans', 'Zen Kaku Gothic New', sans-serif;
+    --body: 'Josefin Sans', 'Zen Kaku Gothic New', sans-serif;
 }
 
 html {
@@ -247,19 +247,6 @@ footer {
     border-color: var(--text-link);
 }
 
-
-.git-icon {
-    content: url("/github-mark-white.svg");
-}
-
-.mail-icon {
-    content: url("/mail-white.svg");
-}
-
-.linked-in {
-    content: url("/li-in-white.png");
-}
-
 /* 404 */
 .lost {
     margin-top: 30%;
@@ -319,18 +306,6 @@ html.light {
 
 .light .icon__link:hover {
     border-color: var(--text-link);
-}
-
-.light .git-icon {
-    content: url("/github-mark.svg");
-}
-
-.light .mail-icon {
-    content: url("/mail.svg");
-}
-
-.light .linked-in {
-    content: url("/li-in.png");
 }
 
 .light .badge__link {
