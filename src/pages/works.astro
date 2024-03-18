@@ -3,18 +3,18 @@ import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import {Image} from "astro:assets";
-const allProjects = await getCollection("posts");
-const pageTitle = "Blogs";
-const pageDescription = "PostLists";
+const allProjects = await getCollection("works");
+const pageTitle = "Works";
+const pageDescription = "WorkLists";
 ---
 <Layout pageTitle={pageTitle} pageDescription={pageDescription}>
     <div class="gif">
-        <Image width="300" height="259" alt="RaccoonBlogGif" src="/blog.webp" loading="eager"/>
+        <Image width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp" loading="eager"/>
     </div>
     <h2>Posts</h2>
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
-            url={`/posts/${card.slug}/`}
+            url={`/works/${card.slug}/`}
             image={card.data.image.url} 
             title={card.data.title} 
             body={card.data.description}
