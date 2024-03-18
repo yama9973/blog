@@ -13,7 +13,7 @@ import { Image } from 'astro:assets';
 <li class="card">
     <a class="card__link" href={url}>
         <div class="center">
-            <Image class="card__img" width="226" height="127" src={image} alt="BlogImage"/>
+            <Image class="card__img" width="226" height="127" src={image} alt="BlogImage" loading="eager"/>
         </div>
         <h3 class="card__title">
             {title}
