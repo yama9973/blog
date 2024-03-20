@@ -1,4 +1,4 @@
-# 個人用ブログ
+# 🥸個人用ブログ
 
 ## 🚀 Getting Started
 Clone this repository to your local machine using Git.
@@ -14,7 +14,7 @@ cd blog
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
-## templateはこちらを使用しています
+## 🙌templateはこちらを使用しています
 https://github.com/ttomczak3/Milky-Way/
 
 ## 📃 License
