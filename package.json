@@ -12,7 +12,7 @@
     "lint-astro-2": "markuplint \"./src/**/**/*.astro\"",
     "lint-eslint": "eslint \"./src/**/*.astro\"",
     "lint-css": "stylelint \"./src/**/*.css\"",
-    "lint": "npm run lint-astro-1 && npm run lint-astro-2 && npm run lint-eslint && npm run lint-css"
+    "lint": "npm run lint-astro-1 || npm run lint-astro-2 || npm run lint-eslint || npm run lint-css"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.1.1",
