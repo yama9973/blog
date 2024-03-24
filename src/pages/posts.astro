@@ -12,7 +12,7 @@ const pageDescription = "PostLists";
         <Image width="300" height="259" alt="RaccoonBlogGif" src="/blog.webp" loading="eager"/>
     </div>
     <h2>Posts</h2>
-    <ul role="list" class="link-card-grid">
+    <ul class="link-card-grid">
         {allProjects.map((card) => <Card 
             url={`/posts/${card.slug}/`}
             image={card.data.image.url} 
