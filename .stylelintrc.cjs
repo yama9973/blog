@@ -12,5 +12,6 @@ module.exports = {
     rules: {
         "no-descending-specificity": null,
         "no-duplicate-selectors": null,
+        "selector-class-pattern": null, // classでkebab-case以外も許容
     },
 };
