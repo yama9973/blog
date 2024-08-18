@@ -2,8 +2,8 @@
 title: 'ブログ作成'
 description: 'ブログを作成してみた'
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+    url: '😎'
+    alt: 'emoji'
 pubDate: '2024-03-17'
 ---
 

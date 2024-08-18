@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import {Image} from "astro:assets";
+import { convertEmojiStrToTwiImage } from '../utils/string';
+
 const allProjects = await getCollection("posts");
 const pageTitle = "Blogs";
 const pageDescription = "PostLists";
@@ -15,7 +17,7 @@ const pageDescription = "PostLists";
     <ul class="link-card-grid">
         {allProjects.map((card) => <Card 
             url={`/posts/${card.slug}/`}
-            image={card.data.image.url} 
+            image={convertEmojiStrToTwiImage(card.data.image.url).url}
             title={card.data.title} 
             body={card.data.description}
             pubDate={card.data.pubDate}

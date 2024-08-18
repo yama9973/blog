@@ -2,8 +2,8 @@
 title: 'AWS SSA受験してみた'
 description: 'AWS SSA受験してみた'
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+    url: '🥲'
+    alt: 'emoji tear'
 pubDate: '2024-08-10'
 ---
 

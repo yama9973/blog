@@ -1,4 +1,5 @@
 # 🥸個人用ブログ
+https://yama9973blog.netlify.app/
 
 ## 🚀 Getting Started
 Clone this repository to your local machine using Git.

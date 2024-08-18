@@ -2,8 +2,8 @@
 title: '2024年春季応用情報受験結果'
 description: '2024年春季応用情報受験結果'
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+    url: '🐝'
+    alt: 'emoji bee'
 pubDate: '2024-08-11'
 ---
 
