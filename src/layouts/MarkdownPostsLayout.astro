@@ -1,5 +1,5 @@
 ---
-import BaseLayout from './Layout.astro';
+import BaseLayout from "./Layout.astro";
 import {Image} from "astro:assets";
 const { frontmatter } = Astro.props;
 ---
@@ -8,6 +8,14 @@ const { frontmatter } = Astro.props;
         <Image width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp" loading="eager"/>
     </div>
     <h2>{frontmatter.title}</h2>
+    <ul class="badge__list">
+        <li>
+            <span class="badge badge--item">AUTHOR</span>{frontmatter.author}
+        </li>
+        <li>
+            <span class="badge badge--item">PUBLISHED</span>{frontmatter.pubDate}
+        </li>
+    </ul>
     <slot />
     <p>更新日 {frontmatter.pubDate}</p>
 </BaseLayout>
