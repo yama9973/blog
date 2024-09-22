@@ -15,6 +15,7 @@
     "lint": "npm run lint-astro-1 || npm run lint-astro-2 || npm run lint-eslint || npm run lint-css"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.5.3",
     "@astrojs/sitemap": "^3.1.6",
     "@twemoji/parser": "^15.1.1",
     "astro": "^4.14.2",
