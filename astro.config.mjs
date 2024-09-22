@@ -8,7 +8,11 @@ export default defineConfig({
   site: 'https://yama9973blog.netlify.app/',
   integrations: [sitemap()],
   output: "server",
-  adapter: netlify({
-    imageCDN: false,
-  }),
+  // adapter: netlify({
+  //  imageCDN: false,
+  // }),
+  adapter: netlify(),
+  image: {
+    domains: ['cdn.jsdelivr.net'],
+  },
 });
