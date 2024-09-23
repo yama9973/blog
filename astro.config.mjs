@@ -11,7 +11,4 @@ export default defineConfig({
   adapter: netlify({
     imageCDN: false,
   }),
-  image: {
-    domains: ['cdn.jsdelivr.net'],
-  },
 });
