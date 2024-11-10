@@ -9,4 +9,7 @@ export default defineConfig({
   integrations: [sitemap()],
   output: "server",
   adapter: netlify(),
+  image: {
+    domains: ['cdn.jsdelivr.net'],
+  },
 });
