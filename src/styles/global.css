@@ -56,7 +56,8 @@ small, li {
 /* Navigation Bar */
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     margin-top: 0.8rem;
 }
 
@@ -69,6 +70,8 @@ small, li {
     font-family: var(--body);
     font-size: 1.1rem;
     text-align: right;
+    grid-auto-flow: column;
+    justify-items: start; /* メニューを右詰めに */
 }
 
 .navbar__title > a, .navbar__menu > a {
