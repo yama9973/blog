@@ -67,11 +67,11 @@ small, li {
 }
 
 .navbar__menu {
+    grid-auto-flow: column;
+    justify-items: start; /* メニューを右詰めに */
     font-family: var(--body);
     font-size: 1.1rem;
     text-align: right;
-    grid-auto-flow: column;
-    justify-items: start; /* メニューを右詰めに */
 }
 
 .navbar__title > a, .navbar__menu > a {
