@@ -6,13 +6,18 @@ const pageDescription = "yama'sBlog";
 ---
 <Layout pageTitle={pageTitle} pageDescription={pageDescription}>
     <div class="gif">
-        <Image  width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp" loading="eager"/>
+        <img src="/.netlify/images?url=/images/space.webp" role="presentation" width="300" height="259" decoding="async">
     </div>
     <h1>TopPage</h1>
     <h2>About</h2>
     <p>
         プログラマーをしています。🥸
     </p>
+    <div class="center">
+        <a href="/works/">
+            <button class="btn">My portfolio</button>
+        </a>
+    </div>
     <h2>Skills</h2>
     <div class="skills center">
         <Image class="skills__img" width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>

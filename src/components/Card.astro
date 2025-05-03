@@ -10,15 +10,18 @@ interface Props {
 const { url, image, title, body,pubDate } = Astro.props;
 import { Image } from 'astro:assets';
 ---
+
 <li class="card">
     <a class="card__link" href={url}>
         <div class="center">
-            <Image
+            <img
                 class="card__img"
+                src={image}
+                role="presentation"
                 width="226"
                 height="127"
-                src={image}
-                alt="ProjectImage"
+                loading="lazy"
+                decoding="async"
             />
         </div>
         <h3 class="card__title">
@@ -32,4 +35,3 @@ import { Image } from 'astro:assets';
         </p>
     </a>
 </li>
-

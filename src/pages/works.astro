@@ -2,19 +2,18 @@
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import {Image} from "astro:assets";
 const allProjects = await getCollection("works");
 const pageTitle = "Works";
 const pageDescription = "WorkLists";
 ---
 <Layout pageTitle={pageTitle} pageDescription={pageDescription}>
     <div class="gif">
-        <Image width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp" loading="eager"/>
+        <img src="/.netlify/images?url=/images/laptop.webp" role="presentation" width="300" height="259" decoding="async">
     </div>
     <h2>Posts</h2>
-    <ul class="link-card-grid">
+    <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
-            url={`/works/${card.slug}/`}
+            url={`/works/${card.id}/`}
             image={card.data.image.url} 
             title={card.data.title} 
             body={card.data.description}
