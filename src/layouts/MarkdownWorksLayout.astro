@@ -1,11 +1,10 @@
 ---
 import BaseLayout from './Layout.astro';
-import {Image} from "astro:assets";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title} pageDescription={frontmatter.title}>
     <div class="gif">
-        <Image width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp" loading="eager"/>
+        <img src="/.netlify/images?url=/images/laptop.webp" role="presentation" width="300" height="259" decoding="async">
     </div>
     <h2>{frontmatter.title}</h2>
     <slot />

@@ -1,27 +1,28 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import {Image} from "astro:assets";
+import Card from "../components/CardPost.astro";
 import { convertEmojiStrToTwiImage } from '../utils/string';
-
-const allPosts = await getCollection("posts");
 const pageTitle = "Blogs";
+const allPosts = await getCollection("posts");
 const pageDescription = "PostLists";
 ---
 <Layout pageTitle={pageTitle} pageDescription={pageDescription}>
     <div class="gif">
-        <Image width="300" height="259" alt="RaccoonBlogGif" src="/blog.webp" loading="eager"/>
+        <img src="/.netlify/images?url=/images/blog.webp" role="presentation" width="300" height="259" decoding="async">
     </div>
-    <h2>Posts</h2>
-    <ul class="link-card-grid">
-        {allPosts.map((card) => <Card
-            url={`/posts/${card.slug}/`}
-            image={convertEmojiStrToTwiImage(card.data.image.url).url}
-            title={card.data.title} 
-            body={card.data.description}
-            pubDate={card.data.pubDate}
-        />)}
+    <h2>Blog</h2>
+    <ul role="list" class="link-card-grid">
+        {
+            allPosts.map((cardPost) => (
+                <Card
+                    url={`/posts/${cardPost.id}/`}
+                    image={convertEmojiStrToTwiImage(cardPost.data.image.url).url}
+                    title={cardPost.data.title}
+                    body={cardPost.data.description}
+                    pubDate={cardPost.data.pubDate}
+                />
+            ))
+        }
     </ul>
 </Layout>
-

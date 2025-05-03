@@ -1,19 +1,20 @@
 /* Global styles */
 :root {
-    --background: #1e1e2e; 
-    --background-light: #fdebf3;
-    --button: #78c2ad;
-    --text: #fdebf3;
-    --text-light: #1e1e2e; 
-    --text-link: #78c2ad;
-    --underline: #375a7f;
-    --header: 'Pacifico', cursive;
-    --body: 'Josefin Sans', 'Zen Kaku Gothic New', sans-serif;
+  --background: #1e1e2e;
+  --background-light: #fcebf3;
+  --button: #78c2ad;
+  --text: #eff1f5;
+  --text-light: #1e1e2e;
+  --text-link: #78c2ad;
+  --text-link-light: #375a7f;
+  --underline: #375a7f;
+  --header: 'Pacifico', cursive;
+  --body: 'Josefin Sans', 'Zen Kaku Gothic New', sans-serif;
 }
 
 html {
-    color: var(--text);
-    background-color: var(--background);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 body {
@@ -28,29 +29,30 @@ h1, h2 {
 }
 
 h1 {
+    font-size: 2.6rem;
     margin: 0;
     margin-bottom: 5px;
-    font-size: 2.6rem;
 }
 
 h2 {
-    margin-bottom: 0;
-    font-size: 2.1rem;
-    text-decoration: underline var(--underline);
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
+  text-decoration: underline var(--underline);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+  font-size: 2.1rem;
+  margin-bottom: 0;
 }
 
 p {
-    font-family: var(--body);
-    font-size: 1.1rem;
-    hyphens: auto;
-    line-height: 1.5;
-    text-indent: 1rem;
+  font-family: var(--body);
+  font-size: 1.1rem;
+  hyphens: auto;
+  line-height: 1.5;
+  text-indent: 1rem;
 }
 
-small, li {
-    font-family: var(--body); 
+small,
+li {
+  font-family: var(--body);
 }
 
 /* Navigation Bar */
@@ -62,139 +64,140 @@ small, li {
 }
 
 .navbar__title {
-    font-family: var(--header);
-    font-size: 1.3rem;
+  font-family: var(--header);
+  font-size: 1.3rem;
 }
 
 .navbar__menu {
-    grid-auto-flow: column;
-    justify-items: start; /* メニューを右詰めに */
     font-family: var(--body);
     font-size: 1.1rem;
     text-align: right;
 }
 
-.navbar__title > a, .navbar__menu > a {
-    color: var(--text);
-    text-decoration: none;
+.navbar__title>a,
+.navbar__menu>a {
+  color: var(--text);
+  text-decoration: none;
 }
 
-.navbar__menu > a {
-    margin: 0 10px;
+.navbar__menu>a {
+  margin: 0 10px;
 }
 
-.navbar__title > a:hover, .navbar__menu > a:hover, .navbar__menu > a:focus {
-    text-decoration: underline var(--underline);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
+.navbar__title>a:hover,
+.navbar__menu>a:hover,
+.navbar__menu>a:focus {
+  text-decoration: underline var(--underline);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
 /* Gifs */
 .gif {
-    margin: 20px 0 0;
-    text-align: center;
+  margin: 20px 0 0 0;
+  text-align: center;
 }
 
 /* Badge */
 .badge {
-    padding: 0.3em 0.6em 0.2em;
-    font-family: var(--body);
-    font-size: .85rem;
-    font-weight: 600;
-    color: var(--text);
-    background-color: #584966;
-    border-radius: 6px;
+  background-color: #584966;
+  color: var(--text);
+  border-radius: 6px;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: .85rem;
+  padding: 0.3em 0.6em 0.2em;
 }
 
 .badge__list {
-    padding: 0;
-    text-indent: 1rem;
-    list-style: none;
+  text-indent: 1rem;
+  list-style: none;
+  padding: 0;
 }
 
-.badge__list > li {
-    margin-top: 10px;
+.badge__list>li {
+  margin-top: 10px;
 }
 
 .badge--item {
-    padding: 0.5em 0.3em 0.3em;
-    margin-right: 5px;
-    font-size: 0.7rem;
-    border-radius: 4px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  margin-right: 5px;
+  padding: 0.5em 0.3em 0.3em 0.3em;
 }
 
 .badge__link {
-    color: var(--text-link);
-    text-decoration: none;
+  color: var(--text-link);
+  text-decoration: none;
 }
 
 .badge__link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Cards */
 .card {
-    display: flex;
-    padding: 20px;
-    list-style: none;
-    background-size: 400%;
+  list-style: none;
+  display: flex;
+  background-size: 400%;
+  padding: 20px;
 }
 
 .card__link {
-    width: 100%;
-    line-height: 1.4;
-    color: var(--text);
-    text-decoration: none;
-    border-radius: 8px;
+  width: 100%;
+  text-decoration: none;
+  line-height: 1.4;
+  border-radius: 8px;
+  color: var(--text);
 }
 
 .card__img {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 .card__title {
-    margin: 0;
-    font-family: var(--body);
-    font-size: 1.5rem;
-    font-weight: normal;
-    text-align: center;
+  margin: 0;
+  font-family: var(--body);
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 .card__txt {
-    margin: 0.5rem 0 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-    text-indent: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-indent: 0;
+  text-align: center;
+  margin: 0.5rem 0 0;
 }
 
 .card__link:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  gap: 1rem;
+  padding: 0;
 }
 
 /* Button */
 .btn {
-    padding: 8px 16px;
-    font: 600 16px var(--body);
-    color: var(--text);
-    text-align: center;
-    background: rgb(0 0 0 / 0%);
-    border: 2px solid var(--button);
-    border-radius: 8px;
-    transition: background-color 0.4s, color 0.4s;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid var(--button);
+  border-radius: 8px;
+  color: var(--text);
+  font: 600 16px var(--body);
+  padding: 8px 16px;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .btn:hover {
-    color: var(--text-light);
-    cursor: pointer;
-    background-color: var(--button);
+  background-color: var(--button);
+  color: var(--text-light);
+  cursor: pointer;
 }
 
 /* Skills */
@@ -212,8 +215,8 @@ small, li {
 }
 
 .pro-img {
-    margin-top: 10px;
-    border-radius: 16px;
+  border-radius: 16px;
+  margin-top: 10px;
 }
 
 /* Footer */
@@ -227,9 +230,9 @@ footer {
 }
 
 .footer {
-    padding: 0;
-    list-style: none;
-    cursor: default;
+  cursor: default;
+  list-style: none;
+  padding: 0;
 }
 
 .icon__btn {
@@ -239,15 +242,27 @@ footer {
 
 .icon__link {
     display: flex;
-    width: 20px;
-    height: 20px;
     padding: 10px;
-    border: 2px solid #fdebf3;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
+    border: 2px solid #fdebf3;
 }
 
 .icon__link:hover {
     border-color: var(--text-link);
+}
+
+.git-icon {
+  content: url("/.netlify/images?url=/images/github-mark-white.svg");
+}
+
+.mail-icon {
+  content: url("/.netlify/images?url=/images/mail-white.svg");
+}
+
+.linked-in {
+  content: url("/.netlify/images?url=/images/li-in-white.png");
 }
 
 /* 404 */
@@ -257,11 +272,11 @@ footer {
 }
 
 .lost__header {
-    margin: 0 auto;
-    font-size: 7.5rem;
-    text-align: center;
-    letter-spacing: 10px;
-    border: 0;
+  margin: 0 auto;
+  text-align: center;
+  border: 0;
+  font-size: 7.5rem;
+  letter-spacing: 10px;
 }
 
 .lost__body {
@@ -275,8 +290,8 @@ footer {
 
 /* Theme Icon */
 html.light {
-    color: var(--text-light);
-    background-color: var(--background-light);
+  background-color: var(--background-light);
+  color: var(--text-light);
 }
 
 .light .navbar__title > a {
@@ -311,15 +326,27 @@ html.light {
     border-color: var(--text-link);
 }
 
+.light .git-icon {
+  content: url("/.netlify/images?url=/images/github-mark.svg");
+}
+
+.light .mail-icon {
+  content: url("/.netlify/images?url=/images/mail.svg");
+}
+
+.light .linked-in {
+  content: url("/.netlify/images?url=/images/li-in.png");
+}
+
 .light .badge__link {
     color: var(--text-link);
 }
 
 /* Media Query */
-@media only screen and (width <= 600px) {
-    body {
-        width: 350px;
-    }
+@media only screen and (max-width: 600px) {
+  body {
+    width: 350px;
+  }
 
     .navbar {
         display: initial;
@@ -337,20 +364,20 @@ html.light {
         margin: 0 11px;
     }
 
-    .skills__img {
-        width: 30px;
-        height: 30px;
-        margin: 8px 1px;
-    }
+  .skills__img {
+    height: 30px;
+    width: 30px;
+    margin: 8px 1px;
+  }
 
     .badge__list {
         font-size: 0.9rem;
         text-indent: 0;
     }
 
-    .pro-img {
-        width: 350px;
-        height: auto;
-    }
+  .pro-img {
+    height: auto;
+    width: 350px;
+  }
 }
 
