@@ -13,8 +13,8 @@
 }
 
 html {
-  background-color: var(--background);
   color: var(--text);
+  background-color: var(--background);
 }
 
 body {
@@ -29,25 +29,25 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2.6rem;
     margin: 0;
     margin-bottom: 5px;
+    font-size: 2.6rem;
 }
 
 h2 {
+  margin-bottom: 0;
+  font-size: 2.1rem;
   text-decoration: underline var(--underline);
   text-decoration-thickness: 4px;
   text-underline-offset: 6px;
-  font-size: 2.1rem;
-  margin-bottom: 0;
 }
 
 p {
   font-family: var(--body);
   font-size: 1.1rem;
-  hyphens: auto;
   line-height: 1.5;
   text-indent: 1rem;
+  hyphens: auto;
 }
 
 small,
@@ -94,25 +94,25 @@ li {
 
 /* Gifs */
 .gif {
-  margin: 20px 0 0 0;
+  margin: 20px 0 0;
   text-align: center;
 }
 
 /* Badge */
 .badge {
-  background-color: #584966;
-  color: var(--text);
-  border-radius: 6px;
-  font-family: var(--body);
-  font-weight: 600;
-  font-size: .85rem;
   padding: 0.3em 0.6em 0.2em;
+  font-family: var(--body);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--text);
+  background-color: #584966;
+  border-radius: 6px;
 }
 
 .badge__list {
+  padding: 0;
   text-indent: 1rem;
   list-style: none;
-  padding: 0;
 }
 
 .badge__list>li {
@@ -120,10 +120,10 @@ li {
 }
 
 .badge--item {
-  border-radius: 4px;
-  font-size: 0.7rem;
+  padding: 0.5em 0.3em 0.3em;
   margin-right: 5px;
-  padding: 0.5em 0.3em 0.3em 0.3em;
+  font-size: 0.7rem;
+  border-radius: 4px;
 }
 
 .badge__link {
@@ -137,18 +137,18 @@ li {
 
 /* Cards */
 .card {
-  list-style: none;
   display: flex;
-  background-size: 400%;
   padding: 20px;
+  list-style: none;
+  background-size: 400%;
 }
 
 .card__link {
   width: 100%;
-  text-decoration: none;
   line-height: 1.4;
-  border-radius: 8px;
   color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 .card__img {
@@ -164,11 +164,11 @@ li {
 }
 
 .card__txt {
+  margin: 0.5rem 0 0;
   font-size: 1rem;
   line-height: 1.5;
-  text-indent: 0;
   text-align: center;
-  margin: 0.5rem 0 0;
+  text-indent: 0;
 }
 
 .card__link:hover {
@@ -184,20 +184,20 @@ li {
 
 /* Button */
 .btn {
+  padding: 8px 16px;
+  font: 600 16px var(--body);
+  color: var(--text);
   text-align: center;
-  background: rgba(0, 0, 0, 0);
+  background: rgb(0 0 0 / 0%);
   border: 2px solid var(--button);
   border-radius: 8px;
-  color: var(--text);
-  font: 600 16px var(--body);
-  padding: 8px 16px;
   transition: background-color 0.4s, color 0.4s;
 }
 
 .btn:hover {
-  background-color: var(--button);
   color: var(--text-light);
   cursor: pointer;
+  background-color: var(--button);
 }
 
 /* Skills */
@@ -215,8 +215,8 @@ li {
 }
 
 .pro-img {
-  border-radius: 16px;
   margin-top: 10px;
+  border-radius: 16px;
 }
 
 /* Footer */
@@ -230,9 +230,9 @@ footer {
 }
 
 .footer {
+  padding: 0;
   cursor: default;
   list-style: none;
-  padding: 0;
 }
 
 .icon__btn {
@@ -242,11 +242,11 @@ footer {
 
 .icon__link {
     display: flex;
-    padding: 10px;
-    height: 20px;
     width: 20px;
-    border-radius: 50%;
+    height: 20px;
+    padding: 10px;
     border: 2px solid #fdebf3;
+    border-radius: 50%;
 }
 
 .icon__link:hover {
@@ -273,10 +273,10 @@ footer {
 
 .lost__header {
   margin: 0 auto;
-  text-align: center;
-  border: 0;
   font-size: 7.5rem;
+  text-align: center;
   letter-spacing: 10px;
+  border: 0;
 }
 
 .lost__body {
@@ -290,8 +290,8 @@ footer {
 
 /* Theme Icon */
 html.light {
-  background-color: var(--background-light);
   color: var(--text-light);
+  background-color: var(--background-light);
 }
 
 .light .navbar__title > a {
@@ -343,7 +343,7 @@ html.light {
 }
 
 /* Media Query */
-@media only screen and (max-width: 600px) {
+@media only screen and (width <= 600px) {
   body {
     width: 350px;
   }
@@ -365,8 +365,8 @@ html.light {
     }
 
   .skills__img {
-    height: 30px;
     width: 30px;
+    height: 30px;
     margin: 8px 1px;
   }
 
@@ -376,8 +376,8 @@ html.light {
     }
 
   .pro-img {
-    height: auto;
     width: 350px;
+    height: auto;
   }
 }
 
