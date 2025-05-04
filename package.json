@@ -22,6 +22,7 @@
     "@astrojs/sitemap": "^3.3.1",
     "@twemoji/parser": "^16.0.0",
     "astro": "^5.7.10",
+    "astro-eslint-parser": "^1.2.2",
     "npm-check-updates": "^18.0.1"
   },
   "devDependencies": {

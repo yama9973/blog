@@ -45,7 +45,7 @@ export default [...compat.extends(
         sourceType: "script",
 
         parserOptions: {
-            parser: "@typescript-eslint/parser",
+            parser: tsParser,
             extraFileExtensions: [".astro"],
         },
     },
